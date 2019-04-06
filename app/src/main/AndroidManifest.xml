@@ -31,11 +31,6 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".ui.splash.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -45,6 +40,16 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.mindorks.framework.mvvm.ui.search.SearchResultActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name="com.mindorks.framework.mvvm.ui.feed.FeedActivity"

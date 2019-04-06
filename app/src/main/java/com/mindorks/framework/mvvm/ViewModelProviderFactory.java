@@ -10,6 +10,7 @@ import com.mindorks.framework.mvvm.ui.feed.opensource.OpenSourceViewModel;
 import com.mindorks.framework.mvvm.ui.login.LoginViewModel;
 import com.mindorks.framework.mvvm.ui.main.MainViewModel;
 import com.mindorks.framework.mvvm.ui.main.rating.RateUsViewModel;
+import com.mindorks.framework.mvvm.ui.search.SearchResultViewModel;
 import com.mindorks.framework.mvvm.ui.splash.SplashViewModel;
 import com.mindorks.framework.mvvm.utils.rx.SchedulerProvider;
 import javax.inject.Inject;
@@ -34,7 +35,11 @@ public class ViewModelProviderFactory extends ViewModelProvider.NewInstanceFacto
 
   @Override
   public <T extends ViewModel> T create(Class<T> modelClass) {
-    if (modelClass.isAssignableFrom(AboutViewModel.class)) {
+    if (modelClass.isAssignableFrom(SearchResultViewModel.class)) {
+      //noinspection unchecked
+      return (T) new SearchResultViewModel(dataManager,schedulerProvider);
+    }
+    else if (modelClass.isAssignableFrom(AboutViewModel.class)) {
       //noinspection unchecked
       return (T) new AboutViewModel(dataManager,schedulerProvider);
     } else if (modelClass.isAssignableFrom(FeedViewModel.class)) {

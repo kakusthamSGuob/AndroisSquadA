@@ -1,0 +1,179 @@
+{
+  "sourceAccount" : [
+    {
+      "name" : "Source Account1",
+      "currencyType" : "SGD"
+    },
+    {
+      "name" : "Source Account2",
+      "currencyType" : "SGD"
+    },
+    {
+      "name" : "Source Account3",
+      "currencyType" : "SGD"
+    }
+  ],
+
+  "destinationAccount" : [
+    {
+      "name" : "Destination Account India1",
+      "currencyType" : "INR",
+      "exchangeRate" : 50.70,
+      "serviceFee" : 0
+    },
+    {
+      "name" : "Destination Account China1",
+      "currencyType" : "CNY",
+      "exchangeRate" : 4.96,
+      "serviceFee" : 0
+    },
+    {
+      "name" : "Destination Account Australia1",
+      "currencyType" : "AUD",
+      "exchangeRate" : 1.04,
+      "serviceFee" : 0
+    },
+    {
+      "name" : "Destination Account Canada1",
+      "currencyType" : "CAD",
+      "exchangeRate" : 0.99,
+      "serviceFee" : 0
+    },
+    {
+      "name" : "Destination Account UK1",
+      "currencyType" : "GBP",
+      "exchangeRate" : 0.57,
+      "serviceFee" : 0
+    },
+    {
+      "name" : "Destination Account Malaysia1",
+      "currencyType" : "MYR",
+      "exchangeRate" : 3.02,
+      "serviceFee" : 1.5
+    },
+    {
+      "name" : "Destination Account Taiwan1",
+      "currencyType" : "TWD",
+      "exchangeRate" : 22.74,
+      "serviceFee" : 1.5
+    }
+
+  ],
+
+  "history" : [
+    {
+      "oneWeek" : [
+        {
+          "date" : "06 April 2019",
+          "isHeader" : true,
+          "sourceAccount" : "Source Account1",
+          "destinationAccount" : "Destination Account India1",
+          "amount" : "SGD 1000"
+        },
+        {
+          "date" : "06 April 2019",
+          "isHeader" : false,
+          "sourceAccount" : "Source Account2",
+          "destinationAccount" : "Destination Account China1",
+          "amount" : "SGD 2000"
+        }
+      ],
+      "oneMonth" : [
+        {
+          "date" : "06 April 2019",
+          "isHeader" : true,
+          "sourceAccount" : "Source Account1",
+          "destinationAccount" : "Destination Account India1",
+          "amount" : "SGD 1000"
+        },
+        {
+          "date" : "06 April 2019",
+          "isHeader" : false,
+          "sourceAccount" : "Source Account2",
+          "destinationAccount" : "Destination Account Australia1",
+          "amount" : "SGD 2000"
+        },
+        {
+          "date" : "06 March 2019",
+          "isHeader" : true,
+          "sourceAccount" : "Source Account2",
+          "destinationAccount" : "Destination Account Canada1",
+          "amount" : "SGD 2000"
+        },
+        {
+          "date" : "19 March 2019",
+          "isHeader" : true,
+          "sourceAccount" : "Source Account1",
+          "destinationAccount" : "Destination Account China1",
+          "amount" : "SGD 100"
+        },
+        {
+          "date" : "19 March 2019",
+          "isHeader" : false,
+          "sourceAccount" : "Source Account1",
+          "destinationAccount" : "Destination Account UK1",
+          "amount" : "SGD 500"
+        }
+      ],
+      "range" : [
+        {
+          "oneMonth" : [
+            {
+              "date" : "06 April 2019",
+              "isHeader" : true,
+              "sourceAccount" : "Source Account1",
+              "destinationAccount" : "Destination Account India1",
+              "amount" : "SGD 1000"
+            },
+            {
+              "date" : "06 April 2019",
+              "isHeader" : false,
+              "sourceAccount" : "Source Account2",
+              "destinationAccount" : "Destination Account Australia1",
+              "amount" : "SGD 550"
+            },
+            {
+              "date" : "06 March 2019",
+              "isHeader" : true,
+              "sourceAccount" : "Source Account2",
+              "destinationAccount" : "Destination Account Canada1",
+              "amount" : "SGD 2000"
+            },
+            {
+              "date" : "19 March 2019",
+              "isHeader" : true,
+              "sourceAccount" : "Source Account1",
+              "destinationAccount" : "Destination Account China1",
+              "amount" : "SGD 100"
+            },
+            {
+              "date" : "19 March 2019",
+              "isHeader" : false,
+              "sourceAccount" : "Source Account1",
+              "destinationAccount" : "Destination Account UK1",
+              "amount" : "SGD 500"
+            },
+            {
+              "date" : "13 March 2019",
+              "isHeader" : true,
+              "sourceAccount" : "Source Account2",
+              "destinationAccount" : "Destination Account Australia1",
+              "amount" : "SGD 1500"
+            },
+            {
+              "date" : "13 March 2019",
+              "isHeader" : false,
+              "sourceAccount" : "Source Account2",
+              "destinationAccount" : "Destination Account Canada1",
+              "amount" : "SGD 900"
+            }
+          ]
+        }
+      ]
+
+    }
+
+
+  ]
+
+}

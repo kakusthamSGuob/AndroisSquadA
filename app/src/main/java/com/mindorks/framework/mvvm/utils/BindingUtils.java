@@ -28,6 +28,7 @@ import com.mindorks.framework.mvvm.ui.feed.opensource.OpenSourceAdapter;
 import com.mindorks.framework.mvvm.ui.feed.opensource.OpenSourceItemViewModel;
 import com.mindorks.framework.mvvm.ui.main.MainViewModel;
 import com.mindorks.framework.mvvm.ui.main.QuestionCard;
+import com.mindorks.framework.mvvm.ui.search.TransactionHistoryItemViewModel;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
 import java.util.List;
 
@@ -40,6 +41,15 @@ public final class BindingUtils {
     private BindingUtils() {
         // This class is not publicly instantiable
     }
+
+//    @BindingAdapter({"adapter"})
+//    public static void addTransactionHistoryItems(RecyclerView recyclerView, List<TransactionHistoryItemViewModel> blogs) {
+//        BlogAdapter adapter = (BlogAdapter) recyclerView.getAdapter();
+//        if (adapter != null) {
+//            adapter.clearItems();
+//            adapter.addItems(blogs);
+//        }
+//    }
 
     @BindingAdapter({"adapter"})
     public static void addBlogItems(RecyclerView recyclerView, List<BlogResponse.Blog> blogs) {

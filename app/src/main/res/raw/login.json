@@ -1,0 +1,20 @@
+{
+  "login" : [
+    {
+      "user_name" : "user1",
+      "password" : "12345a"
+    },
+    {
+      "user_name" : "user2",
+      "password" : "12345b"
+    },
+    {
+      "user_name" : "user3",
+      "password" : "12345c"
+    },
+    {
+      "user_name" : "user4",
+      "password" : "12345d"
+    }
+  ]
+}
